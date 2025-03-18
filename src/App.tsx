@@ -1,19 +1,15 @@
-//import { useState } from 'react'
-import './App.css'
-import NavBar from './components/NavBar'
+import './App.css';
+import MoviesList from './components/MoviesList';
+import Layout from './layout';
 
 function App() {
-  //const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <NavBar/>
-
-      </div>
-        
+      <Layout>
+        <MoviesList />
+      </Layout>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
