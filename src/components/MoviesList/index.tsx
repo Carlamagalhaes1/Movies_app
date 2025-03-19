@@ -1,18 +1,12 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-
-interface Movie {
-    id: number;
-    title: string;
-    overview: string;
-    poster_path: string;
-    vote_average: number;
+import MovieCard from "../MovieCard";
+import { Movie } from "../../types";
 
 
-}
 
 export default function MoviesList() {
-    const [movies, setMovies] = useState([]);
+    const [movies, setMovies] = useState<Movie[]>([]);
 
     useEffect(() => {
         const getMovies = async () => {
@@ -24,7 +18,7 @@ export default function MoviesList() {
                         language: 'pt-BR',
                     },
                 });
-                console.log(response.data)
+                
                 setMovies(response.data.results);
             } catch (error) {
                 console.error('Erro ao buscar filmes:', error);
@@ -38,20 +32,11 @@ export default function MoviesList() {
     return (
         <div className="mt-4">
             <ul>
-                {movies.map((movie: Movie) => (
-                    <li className="text-amber-50" key={movie.id}><p className="text-2xl
-                    ">
-                        {movie.title}</p>
-                        <p className="text-cyan-400">{movie.overview}</p>
-                        
-                            <img className=""
-                                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                                alt={`Poster de ${movie.title}`}
-                            />
-                        <p>{movie.vote_average}</p>
-                      
-                    </li>
-                ))}
+                {movies.map((movie) => 
+                <MovieCard key={movie.id} movie={movie}/>
+
+                    
+                )}
             </ul>
         </div>
     );
