@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import MovieCard from "../MovieCard";
-import { Movie } from "../../types";
+import { Movie } from "../../types/movie";
 
 
 

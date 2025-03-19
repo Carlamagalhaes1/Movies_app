@@ -1,4 +1,5 @@
-import { Movie } from "../../types"
+import { Movie } from "../../types/movie"
+import StarRating from "../StarRating"
 
 
 export interface Props {
@@ -24,6 +25,7 @@ export default function MovieCard(props: Props) {
             </div>
             <div className="">
                  <p className="text-2xl">{movie.title}</p>
+                 <StarRating rating={movie.vote_average}/>
              <div className="">
                  <p className="text-cyan-400">{movie.overview}</p>
              </div>
