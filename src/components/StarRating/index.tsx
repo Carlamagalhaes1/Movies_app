@@ -10,8 +10,8 @@ export interface Props {
 export default function StarRating(props: Props) {
 
     const numStar = Math.round(props.rating / 2)
-    const fullStars = [0, 1, 2];
-    const emptyStars = [3, 4];
+    const fullStars = [];
+    const emptyStars = [];
 
 
     for ( let i = 0; i < 5; i++) {
@@ -24,6 +24,8 @@ export default function StarRating(props: Props) {
     return(
         <div>
             {fullStars.map(index =>  <FaStar key={index}/> )}
+            {emptyStars.map(index =>  <FaRegStar key={index}/> )}
+
            
             <FaRegStar/>
             
