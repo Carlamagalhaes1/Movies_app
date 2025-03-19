@@ -24,7 +24,7 @@ export default function StarRating(props: Props) {
     return(
         <div className='flex gap-1 '>
             {fullStars.map(index =>  <FaStar key={index} className='text-amber-300'/> )}
-            {emptyStars.map(index =>  <FaRegStar key={index}/> )}
+            {emptyStars.map(index =>  <FaRegStar key={index} className='text-amber-300'/> )}
 
            
             <FaRegStar/>

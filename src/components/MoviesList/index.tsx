@@ -30,14 +30,11 @@ export default function MoviesList() {
     }, []);
 
     return (
-        <div className="mt-4">
-            <ul>
-                {movies.map((movie) => 
-                <MovieCard key={movie.id} movie={movie}/>
-
-                    
-                )}
-            </ul>
-        </div>
-    );
+        <div className="grid grid-cols-3 gap-4 ">
+        {movies.map((movie) => (
+            <MovieCard key={movie.id} movie={movie} />
+        ))}
+    </div>
+    )
+        
 }

@@ -16,22 +16,23 @@ export default function MovieCard(props: Props) {
 
     return (
 
-        <li className="text-amber-50" >
-            <div className="">
-                <img className=""
+        <li className="list-none" >
+            <div className="w-full h-[600px] rounded-lg overflow-hidden">
+                <img className="w-full h-full object-cover"
                     src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                     alt={`Poster de ${movie.title}`}
                 />
             </div>
-            <div className="">
-                 <p className="text-2xl">{movie.title}</p>
+            <div className="p-2">
+                 <p className=" text-2xl text-white">{movie.title}</p>
                  <StarRating rating={movie.vote_average}/>
-             <div className="">
-                 <p className="text-cyan-400">{movie.overview}</p>
+             <div className="mt-2">
+                 <p className="text-amber-200 line-clamp-3">{movie.overview}</p>
+                 <button className="text-white mt-2 border-b-1 border-whit italic">ver mais</button>
              </div>
 
             </div>
-            <p className="text-2xl">{movie.title}</p>
+            
             
 
 
