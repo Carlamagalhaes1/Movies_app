@@ -1,7 +1,7 @@
 export default function Login() {
     return(
         <div className="flex items-center justify-center min-h-screen bg-gray-100">
-        <div className="flex flex-col bg-white shadow-2xl rounded-2xl p-8  w-full max-w-md">
+        <div className="flex flex-col bg-white shadow-2xl rounded-s-4xl p-8  w-full max-w-md">
             <h2 className="text-4xl font-bold mb-3 ">Bem vindo</h2>
             <p className="text-gray-400 mb-8 ">Bem-vindo de volta! Por favor, insira seus dados.</p>
             
@@ -27,6 +27,12 @@ export default function Login() {
             <div className="text-center text-gray-400 mt-3">
                 Não tem conta? 
              <span className="font-bold text-black"> Se inscreva de graça</span>
+            </div>
+        </div>
+        <div className="relative">
+            <img src={`https://img.freepik.com/vetores-premium/conjunto-de-icones-de-estilo-plano-de-cinema-e-filme_185107-63.jpg`} alt=""  className="w-[400px] h-[533px] hidden rounded-r-4xl md:block object-cover "/>
+            <div className="absolute hidden bottom-10 right-6 p-6 bg-white bg-opacity-30 rounded md:block ">
+                <div className="text-white text-xl">alalalalaalalallaal</div>
             </div>
         </div>
     </div>
