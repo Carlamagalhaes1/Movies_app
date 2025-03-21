@@ -32,7 +32,7 @@ export default function Login() {
         <div className="relative">
             <img src={`https://img.freepik.com/vetores-premium/conjunto-de-icones-de-estilo-plano-de-cinema-e-filme_185107-63.jpg`} alt=""  className="w-[400px] h-[533px] hidden rounded-r-4xl md:block object-cover "/>
             <div className="absolute hidden bottom-10 right-6 p-6 bg-white bg-opacity-30 rounded md:block ">
-                <div className="text-white text-xl">alalalalaalalallaal</div>
+                <div className="text-white text-xl">alalJJJalalaalalallaal</div>
             </div>
         </div>
     </div>
