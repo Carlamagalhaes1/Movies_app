@@ -1,4 +1,4 @@
-# 🎬 Movie App — React + TypeScript + Vite + Tailwind
+# 🎬 Movie App — React + TypeScript + Vite + Tailwind.
 
 Site web de filmes moderno e responsivo que consome a API do [TMDB](https://www.themoviedb.org/) para exibir os filmes mais populares com descrição, nota em estrelas e interface estilizada com Tailwind CSS.
 
