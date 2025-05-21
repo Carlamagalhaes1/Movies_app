@@ -34,7 +34,7 @@ Site web de filmes moderno e responsivo que consome a API do [TMDB](https://www.
 git clone https://github.com/seu-usuario/movie-app.git
 2. Entre no repositório:
 cd movie-app
-3.Instale as dependências:
+  3.Instale as dependências:
 npm install
 4.Crie um arquivo .env na raiz do projeto e adicione sua chave da API TMDB:
 VITE_TMDB_API_KEY=sua_chave_aqui
