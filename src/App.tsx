@@ -1,28 +1,26 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
-import MoviesList from './components/MoviesList';
-import Layout from './layout';
-import Login from './pages/Login/index';
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { useState } from "react";
+import Login from "./pages/Login";
+import MoviesList from "./pages/MoviesList";
 
+export default function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-function App() {
   return (
-    <>
-      <BrowserRouter
-      >
-        <Routes>
-          <Route path='/' element={<Login/>}/>
-          <Route path='/movie' element={<Layout><MoviesList/></Layout>}/>
-
-         
-
-        </Routes>
-      </BrowserRouter>
-      
-      
-      
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
+        <Route
+          path="/filmes"
+          element={
+            isAuthenticated ? (
+              <MoviesList />
+            ) : (
+              <Navigate to="/" />
+            )
+          }
+        />
+      </Routes>
+    </Router>
   );
 }
-
-export default App;
