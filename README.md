@@ -1,54 +1,49 @@
-# React + TypeScript + Vite
+# 🎬 Movie App — React + TypeScript + Vite + Tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site web de filmes moderno e responsivo que consome a API do [TMDB](https://www.themoviedb.org/) para exibir os filmes mais populares com descrição, nota em estrelas e interface estilizada com Tailwind CSS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- ⚛️ React — biblioteca para construção de interfaces
+- 🔐 TypeScript — tipagem estática para segurança no código
+- ⚡ Vite — bundler ultrarrápido e leve
+- 🎨 Tailwind CSS — estilização via classes utilitárias
+- 🔁 Axios — para requisições HTTP
+- 🌐 React Router DOM — roteamento SPA
+- 🎥 TMDB API — base de dados de filmes
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## ✨ Funcionalidades
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+✅ Exibe lista de filmes populares  
+✅ Cada filme com imagem, título, sinopse e nota  
+✅ Avaliação visual com estrelas ⭐⭐⭐⭐⭐  
+✅ Layout responsivo para mobile e desktop  
+✅ Interface clean e moderna com Tailwind CSS  
+✅ Navegação entre páginas com React Router  
+✅ Código 100% tipado com TypeScript  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🛠️ Como Rodar o Projeto
+
+1. Clone o repositório:
+git clone https://github.com/seu-usuario/movie-app.git
+2. Entre no repositório:
+cd movie-app
+3.Instale as dependências:
+npm install
+4.Crie um arquivo .env na raiz do projeto e adicione sua chave da API TMDB:
+VITE_TMDB_API_KEY=sua_chave_aqui
+5.Inicie o servidor de desenvolvimento:
+npm run dev
+
+
+Este projeto consome dados da TMDB API.
+Cadastre-se, gere sua API Key gratuita e configure no .env.
+
+Feito com 💙 .
+
