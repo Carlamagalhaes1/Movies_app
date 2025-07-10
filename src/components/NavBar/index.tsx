@@ -5,11 +5,11 @@ export default function NavBar() {
                 <h1 className="text-2xl font-bold text-white">
                     Melhores Lançamentos de Filmes de 2024/2025
                 </h1>
-                <div className="w-full md:w-1/3">
+                <div className="w-full md:w-1/3 bg-gray-200 rounded-2xl">
                     <input
                         type="text"
                         placeholder="Pesquisar filme"
-                        className="w-full px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        className="w-full px-3 py-2 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-400"
                     />
                 </div>
             </div>
