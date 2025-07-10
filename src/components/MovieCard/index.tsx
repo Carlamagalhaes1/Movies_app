@@ -16,8 +16,8 @@ export default function MovieCard(props: Props) {
 
     return (
 
-        <li className="list-none" >
-            <div className="w-full h-[600px] rounded-lg overflow-hidden">
+        <li className="list-none mt-4" >
+            <div className="w-full h-[600px] rounded-lg overflow-hidden ">
                 <img className="w-full h-full object-cover"
                     src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                     alt={`Poster de ${movie.title}`}
