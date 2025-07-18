@@ -33,7 +33,7 @@ export default function MoviesList() {
     return (
         <div>
             <NavBar onSearch={setSearchQuery} />
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-20 p-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5 p-4">
                 {filteredMovies.map((movie) => (
                     <MovieCard key={movie.id} movie={movie} />
                 ))}
