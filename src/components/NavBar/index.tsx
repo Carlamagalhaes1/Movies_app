@@ -1,4 +1,8 @@
-export default function NavBar() {
+interface Props {
+    onSearch: (query: string) => void;
+}
+
+export default function NavBar({ onSearch }: Props) {
     return (
         <nav className="bg-blue-950 fixed top-0 left-0 right-0 z-50">
             <div className="container mx-auto flex flex-col md:flex-row items-center justify-between p-3 gap-3">
@@ -9,6 +13,7 @@ export default function NavBar() {
                     <input
                         type="text"
                         placeholder="Pesquisar filme"
+                        onChange={(e) => onSearch(e.target.value)}
                         className="w-full px-3 py-2 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-400"
                     />
                 </div>
