@@ -1,21 +1,14 @@
-
-import './App.css';
-import MoviesList from './components/MoviesList';
-import Layout from './layout';
-
-
+import { useState } from "react";
+import MoviesList from "./components/MoviesList";
+import Layout from "./layout";
 
 function App() {
+  const [searchQuery, setSearchQuery] = useState("");
+
   return (
-    <>
-    <Layout>
-      <MoviesList></MoviesList>
+    <Layout onSearch={setSearchQuery}>
+      <MoviesList searchQuery={searchQuery} />
     </Layout>
-      
-      
-      
-      
-    </>
   );
 }
 
