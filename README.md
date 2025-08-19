@@ -28,16 +28,16 @@ Site web de filmes moderno e responsivo que consome a API do [TMDB](https://www.
 
 ---
 
-## 🛠️ Como Rodar o Projeto
 
-1. Clone o repositório: git clone https://github.com/seu-usuario/movie-app.git
-2. Entre no repositório: cd movie-app
-3. Instale as dependências: npm install
-4. Crie um arquivo .env na raiz do projeto e adicione sua chave da API TMDB: VITE_TMDB_API_KEY=sua_chave_aqui
-5. Inicie o servidor de desenvolvimento: npm run dev
+## 🌐 Acesse o Projeto Online
 
-Este projeto consome dados da TMDB API.
-Cadastre-se, gere sua API Key gratuita e configure no .env.
+👉 [Clique aqui para acessar o Quiz HP](movies-147lhi0if-carlamagalhaes1s-projects.vercel.app)
+
+> 
+
+---
+
+
 
 Feito com 💙 .
 
