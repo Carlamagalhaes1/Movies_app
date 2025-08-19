@@ -23,7 +23,7 @@ Site web de filmes moderno e responsivo que consome a API do [TMDB](https://www.
 ✅ Avaliação visual com estrelas ⭐⭐⭐⭐⭐  
 ✅ Layout responsivo para mobile e desktop  
 ✅ Interface clean e moderna com Tailwind CSS  
-✅ Navegação entre páginas com React Router  
+✅ Barra de pesquisa 
 ✅ Código 100% tipado com TypeScript  
 
 ---
