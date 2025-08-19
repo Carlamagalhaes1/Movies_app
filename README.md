@@ -31,7 +31,7 @@ Site web de filmes moderno e responsivo que consome a API do [TMDB](https://www.
 
 ## 🌐 Acesse o Projeto Online
 
-👉 [Clique aqui para acessar o Quiz HP](https://movies-app-phi-taupe.vercel.app/)
+👉 [Clique aqui para acessar o Movie APP](https://movies-app-phi-taupe.vercel.app/)
 
 > 
 
