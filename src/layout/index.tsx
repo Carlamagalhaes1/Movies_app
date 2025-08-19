@@ -1,15 +1,14 @@
 import React from "react";
 import NavBar from "../components/NavBar";
-
-interface LayoutProps {
+type LayoutProps = {
   children: React.ReactNode;
-  onSearch: (query: string) => void;
-}
+  onSearch?: (value: string) => void; // agora não é mais obrigatório
+};
 
-const Layout: React.FC<LayoutProps> = ({ children, onSearch }) => {
+const Layout: React.FC<LayoutProps> = ({ children, onSearch }: LayoutProps) => {
   return (
     <div className="min-h-screen">
-      <NavBar onSearch={onSearch} />
+      <NavBar onSearch={onSearch}  />
       <div className="pt-16">{children}</div>
     </div>
   );

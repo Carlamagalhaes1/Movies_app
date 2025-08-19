@@ -2,13 +2,11 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import MovieCard from "../MovieCard";
 import { Movie } from "../../types/movie";
+import NavBar from "../NavBar";
 
-interface MoviesListProps {
-  searchQuery: string;
-}
-
-export default function MoviesList({ searchQuery }: MoviesListProps) {
+export default function MoviesList() {
   const [movies, setMovies] = useState<Movie[]>([]);
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     const getMovies = async () => {
@@ -36,10 +34,13 @@ export default function MoviesList({ searchQuery }: MoviesListProps) {
   );
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5 p-4">
-      {filteredMovies.map((movie) => (
-        <MovieCard key={movie.id} movie={movie} />
-      ))}
+    <div>
+      <NavBar onSearch={setSearchQuery} />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5 p-4">
+        {filteredMovies.map((movie) => (
+          <MovieCard key={movie.id} movie={movie} />
+        ))}
+      </div>
     </div>
   );
 }
